@@ -1,0 +1,2 @@
+(this.webpackJsonpgaussian=this.webpackJsonpgaussian||[]).push([[66],{175:function(n,s,e){"use strict";function a(n){n.languages.json={property:{pattern:/"(?:\\.|[^\\"\r\n])*"(?=\s*:)/,greedy:!0},string:{pattern:/"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,greedy:!0},comment:/\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,number:/-?\d+\.?\d*(e[+-]?\d+)?/i,punctuation:/[{}[\],]/,operator:/:/,boolean:/\b(?:true|false)\b/,null:{pattern:/\bnull\b/,alias:"keyword"}}}n.exports=a,a.displayName="json",a.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_json.3e626fea.chunk.js.map
