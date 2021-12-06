@@ -32,7 +32,7 @@ function Provider({ children }) {
 
   function refresh() {
     setIncog("");
-    setValues([]);
+    setValues([""]);
     setError("");
     setResult("");
   }

@@ -9,7 +9,7 @@ function BackArrow() {
   return (
     <Link
       to="/"
-      className="absolute top-0 left-0 cursor-pointer"
+      className="absolute top-0 left-0 cursor-pointer m-5 h-6 w-6 sm:h-8 sm:w-8 sm:m-7 md:h-12 md:w-12 md:m-10 lg:h-15 lg:w-15 lg:m-10"
       onClick={refresh}
     >
       <svg
