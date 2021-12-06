@@ -27,6 +27,7 @@
 
 #main_page,
 .main_page {
+  width: 100%;
   max-width: 900px;
 }
 

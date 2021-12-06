@@ -56,7 +56,7 @@ const getResult = `const getResult = (m) => {
 
 function Code() {
   return (
-    <div id="codigo" className="w-full px-5 flex flex-wrap justify-center">
+    <div id="codigo" className="w-full flex flex-wrap justify-center">
       <BackArrow />
       {/* TITLE- -----------------------------------------------> */}
       <h1
