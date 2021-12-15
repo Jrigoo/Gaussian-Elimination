@@ -6,7 +6,7 @@ const Context = React.createContext();
 function Provider({ children }) {
   const [incog, setIncog] = React.useState("");
   const [values, setValues] = React.useState([]);
-  const [inputs, setInputs] = React.useState([" "]);
+  const [inputs, setInputs] = React.useState([]);
   const [result, setResult] = React.useState("");
 
   let [error, setError] = React.useState("");
@@ -18,9 +18,11 @@ function Provider({ children }) {
 
     if (parseInt(incog) < 2) {
       setError("Numero de incognitas debe ser mayor a 1");
+      setInputs([]);
       return;
     } else if (parseInt(incog) > 6) {
       setError("Numero de incognitas debe ser menor a 6");
+      setInputs([]);
       return;
     } else if (incog !== "" && parseInt(incog) > 1 && parseInt(incog) < 7) {
       let a = Array.from(Array(parseInt(incog) * (parseInt(incog) + 1)).keys());
@@ -35,6 +37,7 @@ function Provider({ children }) {
     setValues([""]);
     setError("");
     setResult("");
+    setInputs([]);
   }
 
   function handleMainInput(e) {
