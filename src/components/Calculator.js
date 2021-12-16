@@ -45,12 +45,12 @@ function Calculator() {
       >
         {inputs.map((idx) => {
           return (
-              <input
-                type="number"
-                className={`w-4/6 py-2 text-sm text-gray-800 place-self-center text-center border-2 focus:border-red-300 hover:border-red-300 rounded outline-none sm:text-xl md:text-2xl xl:text-3xl`}
-                placeholder={`${idx}`}
-                onChange={(e) => handleInputs(e, idx)}
-              />
+            <input
+              type="number"
+              className={`w-4/6 py-2 text-sm text-gray-800 place-self-center text-center border-2 focus:border-red-300 hover:border-red-300 rounded outline-none sm:text-xl md:text-2xl xl:text-3xl`}
+              placeholder={`${idx}`}
+              onChange={(e) => handleInputs(e, idx)}
+            />
           );
         })}
       </div>
@@ -67,7 +67,6 @@ function Calculator() {
       )}
 
       {/* CALC BUTTON ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
-
       <a
         onClick={createMatrix}
         className={`border-2 cursor-pointer rounded text-sm hover:border-red-300 text-gray-800 focus:border-red-300  outline-none mb-3 px-5 py-3 sm:text-xl md:text-2xl xl:text-3xl`}
