@@ -61,7 +61,7 @@ const solve = (m) => {
     columna */
   let newMatrix = [];
   for (let i = 0; i < m.length; i++) {
-    let x = m[i].filter((v, idx) => idx !== 2);
+    let x = m[i].filter((v, idx) => idx !== m[0].length - 1);
     newMatrix.push(x);
   }
   let determinant = det(newMatrix);
