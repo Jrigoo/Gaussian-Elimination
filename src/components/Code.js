@@ -23,7 +23,7 @@ const gaussianElim = `const gaussianElim = (m) => {
   for (let i = 0; i < m.length; i++) {
     let j = 0;
     while (i > j) {
-      m[i] = add(m[i], multiply(multiply(m[j], m[i][j]), -1));
+      m[i] = add(m[i], multiply(multiply(m[j], m[i][j]), -1)); //m[i] - m[j]*m[i][j]
       j += 1;
     }
     m[i] = divide(m[i], m[i][i]);

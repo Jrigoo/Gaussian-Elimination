@@ -15,8 +15,6 @@ function Calculator() {
     error,
   } = React.useContext(Context);
 
-  const variables = ["x", "y", "z", "a", "b", "c"];
-
   return (
     <div
       id="calculator"
@@ -47,12 +45,12 @@ function Calculator() {
       >
         {inputs.map((idx) => {
           return (
-            <input
-              type="number"
-              className={`w-4/6 py-2 text-sm text-gray-800 place-self-center text-center border-2 focus:border-red-300 hover:border-red-300 rounded outline-none sm:text-xl md:text-2xl xl:text-3xl`}
-              placeholder={`${idx}`}
-              onChange={(e) => handleInputs(e, idx)}
-            />
+              <input
+                type="number"
+                className={`w-4/6 py-2 text-sm text-gray-800 place-self-center text-center border-2 focus:border-red-300 hover:border-red-300 rounded outline-none sm:text-xl md:text-2xl xl:text-3xl`}
+                placeholder={`${idx}`}
+                onChange={(e) => handleInputs(e, idx)}
+              />
           );
         })}
       </div>
@@ -94,7 +92,10 @@ function Calculator() {
                 return (
                   <h1
                     className={`text-sm p-4 text-green-500 sm:text-xl md:text-2xl xl:text-3xl`}
-                  >{`${variables[idx]} = ${val}`}</h1>
+                  >
+                    x<sub>{`${idx + 1}`}</sub>
+                    {` = ${val}`}
+                  </h1>
                 );
               })
           : ""}
